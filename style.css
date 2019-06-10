@@ -83,11 +83,19 @@ img{
 }
 
 
-/* blocco responsive colonne float none */
+/* blocco responsive colonne float none
+per dispositivi fino ad ipad in giù */
 @media screen and (max-width: 767px) {
 
-  h1{
-    font-size: 1.2rem;
+  body > h1,
+  body > h3{
+    font-size: 1.5rem;
+  }
+
+  #lezioni,
+  #steps,
+  #why{
+    height: 50%;
   }
 
   #lezioni .row > .left,
@@ -100,10 +108,9 @@ img{
   }
 
   #lezioni img,
-  #steps img,
-{
-    width: 50%;
-    height: 50%;
+  #steps img,{
+    width: 40%;
+    height: 40%;
   }
 
   .container{
@@ -113,12 +120,9 @@ img{
 
 }
 
-@media screen and (min-width: 767px){
 
-  /* #why h1{
-    display: block;
-    background-color: red;
-  } */
+/* Parte responsive per dispositivi da ipad fino a dektop */
+@media screen and (min-width: 767px){
 
   #why .row::after{
     content: "";
@@ -132,6 +136,4 @@ img{
     width: 33%;
     float: left;
   }
-
-
 }
