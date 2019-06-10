@@ -92,11 +92,10 @@ per dispositivi fino ad ipad in giù */
     font-size: 1.5rem;
   }
 
-  #lezioni,
-  #steps,
-  #why{
-    height: 50%;
+  .row{
+    margin-top: 0;
   }
+
 
   #lezioni .row > .left,
   #lezioni .row > .right,
@@ -107,10 +106,24 @@ per dispositivi fino ad ipad in giù */
     width: 100%;
   }
 
+  /* view port 50% per la sezione con 2 colonne */
+  #lezioni .row > .left,
+  #lezioni .row > .right{
+    height: 50vh;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right,
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third{
+    height: 30vh;
+  }
+
   #lezioni img,
   #steps img,{
-    width: 40%;
-    height: 40%;
+    height: 100px;
   }
 
   .container{
