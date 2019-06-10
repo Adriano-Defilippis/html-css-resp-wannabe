@@ -115,9 +115,23 @@ img{
 
 @media screen and (min-width: 767px){
 
-  #why h1{
+  /* #why h1{
     display: block;
     background-color: red;
+  } */
+
+  #why .row::after{
+    content: "";
+    display: table;
+    clear: both;
   }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    width: 33%;
+    float: left;
+  }
+
 
 }
